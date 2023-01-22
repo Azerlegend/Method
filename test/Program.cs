@@ -11,33 +11,36 @@ namespace Method
     public class program
     {
 
-        //static void Main()
-        //{
-        //int number = Convert.ToInt32(Console.ReadLine());
-        //method(number);
+        static void Main()
+        {
+            int number = Convert.ToInt32(Console.ReadLine());
+            method(number);
 
 
-        //}
+        }
 
 
 
-        //static void method(int number)
+        static void method(int number)
 
-        //{
+        {
 
-        //    if (number % 7 == 0)
-        //    { number = number; }
-
-        //    while (number%7 != 0 && number%7<=3)
-        //    { number--; }   
-
-        //    while (number%7 != 0 && number%7>=3)
-        //    { number++; }
+            if (number % 7 == 0)
+            { number = number; }
 
 
-        //    Console.WriteLine(number);
+            while (number % 7 != 0 && number % 7 > 3)
+            { number++; }
 
-        //}
+            while (number % 7 != 0 && number % 7 <= 3)
+            { number--; }
+
+            
+
+
+            Console.WriteLine(number);
+
+        }
 
 
 
@@ -52,7 +55,7 @@ namespace Method
 
         //static void Main() 
         //{
-        
+
         //int number=Convert.ToInt32(Console.ReadLine());
         //int sum = 0;
         //Sumofelements(number, sum);
@@ -82,28 +85,28 @@ namespace Method
 
 
 
-        static void Main()
-        {
-            string firstword = Console.ReadLine();
-            string secondword = Console.ReadLine();
-            Longer(firstword, secondword);
+        //static void Main()
+        //{
+        //    string firstword = Console.ReadLine();
+        //    string secondword = Console.ReadLine();
+        //    Longer(firstword, secondword);
 
-        }
+        //}
 
 
-        static void Longer(string firstword, string secondword)
-        {
+        //static void Longer(string firstword, string secondword)
+        //{
 
-            if (firstword.Length > secondword.Length)
-            {
-                Console.WriteLine($"{firstword} - uzundur");
-            }
-            else
-            {
-                Console.WriteLine($"{secondword} - uzundur");
-            }
+        //    if (firstword.Length > secondword.Length)
+        //    {
+        //        Console.WriteLine($"{firstword} - uzundur");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine($"{secondword} - uzundur");
+        //    }
 
-        }
+        //}
 
 
 
